@@ -1,0 +1,125 @@
+/* Portfolio css
+============================================================================================ */
+.portfolio_area{
+    .porfolio_menu{
+        text-align: center;
+        .causes_filter{
+            text-align: center;
+            border-bottom: 5px solid #fff;
+            display: inline-block;
+            border-radius: 2.5px;
+            li{
+                display: inline-block;
+                margin-right: 45px;
+                a{
+                    font-size: 18px;
+                    color: $dip;
+                    font-family: $ral;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    line-height: 36px;
+                    position: relative;
+                    display: inline-block;
+                    &:before{
+                        content: "";
+                        height: 5px;
+                        background: $baseColor;
+                        width: 100%;
+                        position: absolute;
+                        left: 0px;
+                        bottom: -5px;
+                        transform: scale(0);
+                        @include transition;
+                    }
+                }
+                &:hover, &.active{
+                    a{
+                        &:before{
+                            transform: scale(1);
+                        }
+                    }
+                }
+                &:first-child{
+                    a{
+                        &:before{
+                            border-bottom-left-radius: 2.5px;
+                            border-top-left-radius: 2.5px;
+                        }
+                    }
+                }
+                &:last-child{
+                    margin-right: 0px;
+                    a{
+                        &:before{
+                            border-bottom-right-radius: 2.5px;
+                            border-top-right-radius: 2.5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .portfolio_list_inner{
+        .portfolio_item{
+            margin-top: 40px;
+            .portfolio_img{
+                position: relative;
+                transform: perspective(1px) translateZ(0);
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, .5);
+                    transform: scaleX(0);
+                    transform-origin: 0 50%;
+                    transition-property: transform;
+                    transition-timing-function: ease-out;
+                    transition-duration: 0.3s;
+                }
+                img{
+                    max-width: 100%;
+                }
+            }
+            .portfolio_title{
+                text-align: center;
+                background: #fff;
+                @include transition;
+                h4{
+                    font-size: 16px;
+                    font-family: $ral;
+                    font-weight: bold;
+                    color: $pfont;
+                    text-transform: uppercase;
+                    padding: 18px 0px 10px 0px;
+                }
+                h5{
+                    font-size: 14px;
+                    font-family: $ral;
+                    color: $gray;
+                    padding-bottom: 18px;
+                }
+            }
+            &:hover{
+                .portfolio_img{
+                    &:before{
+                        transform: scaleX(1);
+                    }
+                }
+                .portfolio_title{
+                    background: $baseColor;
+                    h4{
+                        color: #fff;
+                    }
+                    h5{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Portfolio css
+============================================================================================ */

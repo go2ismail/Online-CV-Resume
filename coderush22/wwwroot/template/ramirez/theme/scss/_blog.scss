@@ -1,0 +1,281 @@
+/* News area css
+============================================================================================ */
+.news_area{
+    
+}
+.news_inner_area{
+    
+}
+.twitter_area{
+    background: #fff;
+    padding: 0px 15px;
+    min-height: 420px;
+    ul{
+        padding-bottom: 20px;
+        li{
+            font-size: 14px;
+            color: $gray;
+            line-height: 24px;
+            font-family: $ral;
+            margin-bottom: 15px;
+            font-weight: 400;
+            a{
+                color: $baseColor;
+                font-size: 14px;
+                line-height: 24px;
+                font-family: $ral;
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.w_title{
+    padding: 28px 0px 20px 0px;
+    h3{
+        font-size: 18px;
+        color: $pfont;
+        font-family: $ral;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        i{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: #0084b4;
+        }
+    }
+}
+.instagram_area{
+    background: #fff;
+    padding: 0px 15px;
+    overflow: hidden;
+    clear: both;
+    min-height: 420px;
+    .w_title{
+        h3{
+            i{
+                color: #895a4d;
+            }
+        }
+    }
+    ul{
+        overflow: hidden;
+        clear: both;
+        li{
+            width: calc(100% / 3);
+            float: left;
+            overflow: hidden;
+            padding-right: 10px;
+            margin-bottom: 10px;
+            a{
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .follow_btn{
+        max-width: 170px;
+        background: #895a4d;
+        line-height: 35px;
+        display: block;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        margin: 5px auto 22px;
+        overflow: hidden;
+    }
+}
+.blog_slider_area{
+    background: #fff;
+    padding: 0px 15px;
+    position: relative;
+    min-height: 420px;
+    .blog_slider_inner{
+        .item{
+            h3{
+                font-size: 14px;
+                color: $pfont;
+                font-weight: bold;
+                font-family: $ral;
+                text-transform: uppercase;
+                padding: 25px 0px 10px 0px;
+            }
+            p{
+                font-family: $ral;
+                font-size: 14px;
+                line-height: 24px;
+                color: $gray;
+                padding-bottom: 10px;
+                a{
+                    color: $pfont;
+                }
+            }
+            h5{
+                font-family: $ral;
+                font-size: 14px;
+                line-height: 24px;
+                color: $gray;
+                font-weight: normal;
+                padding-bottom: 14px;
+                a{
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+    .owl-prev{
+        position: absolute;
+        left: 15px;
+        top: 27px;
+        font-size: 18px;
+        color: $gray;
+        @include transition;
+        cursor: pointer;
+        z-index: 3;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+    .owl-next{
+        position: absolute;
+        right: 15px;
+        top: 27px;
+        font-size: 18px;
+        color: $gray;
+        @include transition;
+        cursor: pointer;
+        z-index: 3;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+}
+
+.contact_area{
+    
+}
+.contact_title{
+    h3{
+        font-size: 24px;
+        color: $pfont;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding-bottom: 34px;
+    }
+}
+.left_contact_details{
+    p{
+        font-size: 14px;
+        color: $gray;
+        line-height: 24px;
+        padding-bottom: 20px;
+        & + p{
+            padding-bottom: 20px;
+        }
+    }
+    .media{
+        margin-top: 30px;
+        .media-left{
+            padding-right: 30px;
+            i{
+                height: 60px;
+                width: 60px;
+                background: $baseColor;
+                color: #fff;
+                font-size: 30px;
+                text-align: center;
+                line-height: 60px;
+                border-radius: 50%;
+                border: 1px solid $baseColor;
+                @include transition;
+            }
+        }
+        .media-body{
+            h4{
+                font-size: 14px;
+                font-family: $ral;
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $pfont;
+                padding-bottom: 10px;
+            }
+            p{
+                padding: 0px;
+                font-size: 14px;
+                color: $gray;
+                line-height: 24px;
+            }
+        }
+        &:hover{
+            .media-left{
+                i{
+                    background: transparent;
+                    color: $baseColor;
+                }
+            }
+        }
+    }
+}
+.contact_from_area{
+    .form-group{
+        margin-bottom: 20px;   
+        input{
+            width: 100%;
+            box-shadow: none;
+            outline: none;
+            text-shadow: none;
+            border: 1px solid #dfdfdf;
+            border-radius: 0px;
+            padding: 0px 15px;
+            height: 50px;
+            font-size: 14px;
+            color: #999999; 
+            font-family: $ral;
+            @include placeholder{
+                font-size: 14px;
+                color: #999999;
+                font-family: $ral;
+            }
+            &:focus{
+                border-color: $baseColor;
+            }
+        }
+        textarea{
+            width: 100%;
+            box-shadow: none;
+            outline: none;
+            text-shadow: none;
+            border: 1px solid #dfdfdf;
+            border-radius: 0px;
+            padding: 20px 15px 0px 15px;
+            height: 120px;
+            font-size: 14px;
+            color: #999999;
+            resize: none;
+            font-family: $ral;
+            @include placeholder{
+                font-size: 14px;
+                color: #999999;
+                font-family: $ral;
+            }
+            &:focus{
+                border-color: $baseColor;
+            }
+        }
+        &:last-child{
+            margin-bottom: 0px;
+            margin-top: 10px;  
+        }
+    }
+}
+.mapBox{
+    height: 220px;
+    margin-top: 60px !important;
+}
+/* End News area css
+============================================================================================ */

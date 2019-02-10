@@ -1,0 +1,60 @@
+/* Header Menu Area css
+============================================================================================ */
+.header_area{
+    background: $baseColor;
+    .navbar.navbar-default{
+        border: none;
+        border-radius: 0px;
+        background: transparent;
+        margin: 0px;
+        .navbar-header{
+            .navbar-brand{
+                padding: 0;
+                display: block;
+                vertical-align: middle;
+                line-height: 76px;
+                img{
+                    display: inline-block;
+                }
+            }
+        }
+        .navbar-collapse{
+            .nav.navbar-nav{
+                li{
+                    margin-right: 40px;
+                    a{
+                        padding: 0px;
+                        background: transparent;
+                        line-height: 80px;
+                        font-family: $ral;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        color: $dip;
+                        display: inline-block;
+                        @include transition;
+                    }
+                    &:hover, &.active{
+                        a{
+                            color: #fff;
+                        }
+                    }
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                }
+            }
+        }
+    }
+    &.stricky-fixed{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+        z-index: 9999;
+        & + section,& + div,& + .row{
+            margin-top: 80px;
+        }
+    }
+}
+/* End Header Menu Area css
+============================================================================================ */

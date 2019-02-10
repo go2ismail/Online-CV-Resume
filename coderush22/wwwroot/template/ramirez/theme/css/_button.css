@@ -1,0 +1,25 @@
+/* Download BTN area css
+============================================================================================ */
+.download_btn {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  position: relative;
+}
+
+.download_btn:before {
+  content: "\f019";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+}
+
+/* End Download BTN area css
+============================================================================================ */
+
+/*# sourceMappingURL=_button.css.map */

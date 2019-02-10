@@ -1,0 +1,210 @@
+/* Skill Area css
+============================================================================================ */
+.myskill_area{
+    .skill_text{
+        padding-bottom: 28px;
+        h4{
+            font-family: $ral;
+            color: $pfont;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-bottom: 25px;
+        }
+        p{
+            font-size: 13px;
+            line-height: 24px;
+            font-family: $ral;
+            color: $pfont;
+        }
+    }
+    .skill_item_inner{
+        .single_skill{
+            h4{
+                font-size: 16px;
+                color: $pfont;
+                font-family: $ral;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding-bottom: 5px;
+            }
+            .progress{
+                margin-bottom: 30px;
+                height: 30px;
+                border-radius: 0px;
+                border: none;
+                box-shadow: none;
+                text-shadow: none;
+                background: #fff;
+                .progress-bar{
+                    background: $baseColor;
+                    box-shadow: none;
+                    .progress_parcent{
+                        font-family: $ral;
+                        font-size: 16px;
+                        color: #fff;
+                        line-height: 30px;
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+                }
+            }
+            &:last-child{
+                .progress{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+/* End Skill Area css
+============================================================================================ */
+
+/* Education Area css
+============================================================================================ */
+.education_area{
+    padding-bottom: 60px;
+    .education_inner_area{
+        position: relative;
+        overflow: hidden;
+        &:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            width: 5px;
+            margin-left: -2.5px;
+            background: rgba(254, 198, 8, .5);
+        }
+        .education_item{
+            width: 50%;
+            max-width: 420px;
+            background: #fff;
+            margin-bottom: 30px;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+            &:before{
+                content: attr(data-line);
+                position: absolute;
+                right: -108px;
+                top: 0px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                border: 4px solid #f7da7b;
+                text-align: center;
+                color: #fff;
+                line-height: 43px;
+                font-family: $ral;
+                font-size: 30px;
+                font-weight: bold;
+                text-transform: uppercase;
+                background: $baseColor;
+            }
+            &:after{
+                content: "";
+                background: #f7da7b;
+                height: 4px;
+                position: absolute;
+                right: -78px;
+                top: 0px;
+                width: 119%;
+            }
+            &:nth-child(even){
+                float: right;
+                &:before{
+                    right: auto;
+                    left: -108px;
+                }
+                &:after{
+                    left: -78px;
+                }
+            }
+            &:nth-child(odd){
+                float: left;
+            }
+            &:nth-child(2){
+                margin-top: 108px;
+                
+            }
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            h6{
+                font-size: 14px;
+                color: $baseColor;
+                font-family: $ral;
+                font-weight: bold;
+            }
+            h4{
+                font-size: 18px;
+                font-family: $ral;
+                color: $pfont;
+                padding: 8px 0px 7px 0px;
+            }
+            h5{
+                font-size: 14px;
+                color: $pfont;
+                font-family: $ral;
+            }
+            p{
+                font-size: 13px;
+                line-height: 24px;
+                font-family: $ral;
+                color: $gray;
+                font-weight: 400;
+                padding-top: 12px;
+            }
+        }
+    }
+}
+/* End Education Area css
+============================================================================================ */
+
+/* Service Area css
+============================================================================================ */
+.service_area{
+    background: $baseColor;
+    padding: 0px 50px 60px 50px;
+    .service_inner{
+        .service_item{
+            text-align: center;
+            margin-top: 30px;
+            i{
+                height: 62px;
+                width: 62px;
+                line-height: 60px;
+                border-radius: 50%;
+                background: #efefef;
+                border: 2px solid $dip;
+                font-size: 30px;
+                color: $dip;
+                @include transition;
+            }
+            h4{
+                font-size: 18px;
+                font-family: $ral;
+                font-weight: bold;
+                color: $dip;
+                padding: 25px 0px 15px 0px;
+            }
+            p{
+                font-size: 13px;
+                font-family: $ral;
+                line-height: 24px;
+                color: $pfont;
+            }
+            &:hover{
+                i{
+                    background: $dip;
+                    border-color: #efefef;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+/* End Service Area css
+============================================================================================ */

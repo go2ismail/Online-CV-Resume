@@ -1,0 +1,67 @@
+.header_area {
+	background: #27a79a;
+}
+.about_person_area .person_details h3 span {
+	color: #27a79a;
+}
+.download_btn {
+	background: #27a79a;
+}
+.myskill_area .skill_item_inner .single_skill .progress .progress-bar {
+	background: #27a79a;
+}
+.education_area .education_inner_area .education_item h6 {
+	color: #27a79a;
+}
+.education_area .education_inner_area .education_item::before {
+	border: 4px solid #2cbcad;
+	background: #27a79a;
+}
+.education_area .education_inner_area .education_item::after {
+	background: #2cbcad;
+}
+.education_area .education_inner_area::before {
+	background: #2cbcad;
+}
+.service_area {
+	background: #27a79a;
+}
+.portfolio_area .porfolio_menu .causes_filter li a::before {
+	background: #27a79a;
+}
+.portfolio_area .portfolio_list_inner .portfolio_item:hover .portfolio_title {
+	background: #27a79a;
+}
+.twitter_area ul li a {
+	color: #27a79a;
+}
+.blog_slider_area .owl-prev:hover {
+	color: #27a79a;
+}
+.blog_slider_area .owl-next:hover {
+	color: #27a79a;
+}
+.blog_slider_area .blog_slider_inner .item h5 a {
+	color: #27a79a;
+}
+.left_contact_details .media .media-left i {
+	background: #27a79a;
+}
+.contact_btn {
+	background: #27a79a;
+}
+.contact_from_area .form-group input:focus {
+	border-color: #27a79a;
+}
+.contact_from_area .form-group textarea:focus {
+	border-color: #27a79a;
+}
+.contact_btn:hover {
+	background: #27a79a;
+}
+.footer_copyright .pull-left h5 a {
+	color: #27a79a;
+}
+.footer_copyright .pull-right .navbar-nav li:hover a, .footer_copyright .pull-right .navbar-nav li.active a {
+	color: #27a79a;
+}

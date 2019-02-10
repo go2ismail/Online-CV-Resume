@@ -1,0 +1,119 @@
+/* Footer area css
+============================================================================================ */
+.footer_area{
+    
+}
+.footer_inner{
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    padding: 80px 0px 60px 0px;
+    margin-top: -30px;
+    img{
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    ul{
+        li{
+            a{
+                background: #677fb5;
+                color: #fff;
+            }
+            &:nth-child(2){
+                a{
+                    background: #70c2e9;
+                    color: #fff;
+                }
+            }
+            &:nth-child(3){
+                a{
+                    background: #895a4d;
+                    color: #fff;
+                }
+            }
+            &:nth-child(4){
+                a{
+                    background: #d34836;
+                    color: #fff;
+                }
+            }
+            &:nth-child(5){
+                a{
+                    background: #007ab9;
+                    color: #fff;
+                }
+            }
+            &:nth-child(6){
+                a{
+                    background: #d8545d;
+                    color: #fff;
+                }
+            }
+            &:nth-child(7){
+                a{
+                    background: #5ecbf3;
+                    color: #fff;
+                }
+            }
+            &:nth-child(8){
+                a{
+                    background: #ff3ba4;
+                    color: #fff;
+                }
+            }
+            &:nth-child(9){
+                a{
+                    background: #e299c2;
+                    color: #fff;
+                }
+            }
+            &:last-child{
+                a{
+                    background: #faaa5e;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.footer_copyright{
+    background: rgba(0, 0, 0, .7);
+    .pull-left{
+        h5{
+            font-size: 13px;
+            color: #fff;
+            font-family: $ral;
+            line-height: 100px;
+            a{
+                font-weight: bold;
+                color: $baseColor;
+            }
+        }
+    }
+    .pull-right{
+        .navbar-nav{
+            li{
+                margin-right: 40px;
+                a{
+                    padding: 0px;
+                    background: transparent;
+                    line-height: 100px;
+                    text-transform: uppercase;
+                    font-family: $ral;
+                    font-weight: bold;
+                    color: #fff;
+                    @include transition;
+                }
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &:hover, &.active{
+                    a{
+                        color: $baseColor;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Footer area css
+============================================================================================ */

@@ -1,0 +1,86 @@
+.envalab-style-switch{
+    position: fixed;
+    z-index: 9999;
+    top: 160px;
+    left: -200px;
+    background: #FFFFFF;
+    .switched-options{
+        position: relative;
+        width: 200px;
+        padding: 20px 20px 30px 20px;
+        -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        clear: both;
+        .styles{
+            margin-right: -5px;
+            li{
+                width: calc(98% / 4);
+                float: left;
+                a{
+                    height: 35px;
+                    display: block;
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                    background: $baseColor;
+                }
+                &:nth-child(2){
+                    a{
+                        background: #fe562e;
+                    }
+                }
+                &:nth-child(3){
+                    a{
+                        background: #fe2e86;
+                    }
+                }
+                &:nth-child(4){
+                    a{
+                        background: #732efe;
+                    }
+                }
+                &:nth-child(5){
+                    a{
+                        background: #26b7e7;
+                    }
+                }
+                &:last-child{
+                    a{
+                        background: #27a79a;
+                    }
+                }
+            }
+        }
+    }
+    .switch-button{
+        cursor: pointer;
+        position: absolute;
+        right: -40px;
+        top: 0px;
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        background: #fff;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        box-shadow: 2px 1px 4px grey;
+        line-height: 40px;
+        color: $dip;
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .config-title{
+        font-family: $ral;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        text-transform: uppercase;
+        box-shadow: 2px 1px 4px grey;
+        margin-bottom: 20px;
+        padding: 10px 0px;
+    }
+}
+
+
+
+

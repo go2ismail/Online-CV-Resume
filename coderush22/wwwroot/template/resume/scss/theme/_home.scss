@@ -1,0 +1,724 @@
+.section-gap {
+	padding: 120px 0;
+}
+.section-title {
+	padding-bottom: 30px;
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		font-size: 16px;
+		margin-bottom: 0;
+		@include media-breakpoint-down (md) {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+
+.p1-gradient-bg {
+  background-image: -moz-linear-gradient( 0deg, rgb(98,189,252) 0%, rgb(132,144,255) 100%);
+  background-image: -webkit-linear-gradient( 0deg, rgb(98,189,252) 0%, rgb(132,144,255) 100%);
+  background-image: -ms-linear-gradient( 0deg, rgb(98,189,252) 0%, rgb(132,144,255) 100%);
+}
+
+
+.p1-gradient-color {
+  background: -moz-linear-gradient( 0deg, rgb(98,189,252) 0%, rgb(132,144,255) 100%);
+  background: -webkit-linear-gradient( 0deg, rgb(98,189,252) 0%, rgb(132,144,255) 100%);
+  background: -ms-linear-gradient( 0deg, rgb(98,189,252) 0%, rgb(132,144,255) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.primary-btn {
+	@extend .p1-gradient-bg;
+	line-height: 42px;
+	padding-left: 30px;
+	padding-right: 60px;
+	border-radius: 25px;
+	border:none;
+	color: $white;
+	display: inline-block;
+	font-weight: 500;
+	position: relative;
+	@include transition();
+	cursor: pointer;
+	text-transform: uppercase;
+	position: relative;
+	&:focus {
+		outline: none;
+	}
+	span {
+		color: $white;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-60%);
+		right: 30px;
+		@include transition();
+	}
+	&:hover {
+		color: $white;
+		span {
+			color: $white;
+			right: 20px;
+		}
+	}
+	&.white {
+		border: 1px solid $white;
+		color: $white;
+		span {
+			color: $white;
+		}
+		&:hover {
+			background: $white;
+			color: $primary-color;
+			span {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+.primary-btn2 {
+	color:$black;
+	font-weight:600;
+	border:1px solid #f4f4f4;
+	padding: 5px 30px;
+	border-radius: 20px;	
+	&:hover{
+		@extend .p1-gradient-bg;
+		color:#fff;
+	}
+}
+
+
+.pbtn-2{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+//--------- Start Banner Area -------------//
+
+.default-header{
+	@extend .p1-gradient-bg;
+	width: 100% !important;
+}
+
+.sticky-wrapper{
+	height:48px !important;
+
+}
+
+.dropdown-item {
+	font-size: 14px;
+    width: auto !important;
+    text-align:left;
+    @media(max-width:767px){
+	    text-align:left;
+		padding: 0.25rem;   
+    }
+ 
+}
+
+@media (min-width: 768px) {
+	.dropdown .dropdown-menu{
+		display: block; 
+		opacity:0;
+		-webkit-transition: all 200ms ease-in;
+		-moz-transition: all 200ms ease-in;
+		-ms-transition: all 200ms ease-in;
+		-o-transition: all 200ms ease-in;
+		transition: all 200ms ease-in;
+	}
+	.dropdown:hover .dropdown-menu {
+	    display: block;
+	    opacity: 1;
+	}
+}
+
+
+.dropdown-menu{
+	@extend .p1-gradient-bg;	
+    border-radius:0;
+    margin-top:15px;
+    border:none;
+     a{
+		padding: 5px 15px;    	
+    }
+    @media(max-width:767px){
+		margin-top:0px;
+    }
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+
+.is-sticky .default-header{
+	@include transition();
+	background-color:$white;	
+}
+
+.banner-area {
+	@extend .p1-gradient-bg;
+	.fullscreen {
+		@include media-breakpoint-down (sm) {
+			height: 700px !important;
+		}
+	}
+}
+.banner-left {
+	@include media-breakpoint-down(md) {
+		text-align:center;
+	}
+
+	h1{
+		color:$black;
+		font-size: 36px;
+		font-weight: 100;
+		line-height: 1em;
+		margin-bottom:40px;	
+		span{
+			text-transform:uppercase;
+			font-weight:700;
+		}
+		@include media-breakpoint-down(md) {
+			font-size: 36px;
+		}
+		br {
+			@include media-breakpoint-down (md) {
+				display: none;
+			}
+		}
+
+		@include media-breakpoint-down (lg) {
+				font-size:45px;
+		}	
+
+		@media ( max-width:414px ) {
+			font-size:40px;
+		}
+	}
+	@media(max-width: 800px) {
+		padding-bottom:40px;
+	}		
+}	
+
+
+.banner-right{
+	margin-top:100px;
+
+	@media(max-width:800px){
+		margin-top:70px;
+		margin-bottom:30px;
+		img{
+			width:40%;
+			margin-right: auto !important;
+			margin-left: auto !important;
+			display:block;
+
+		}
+	}
+}
+
+.header-btn{
+	background-color:$white;
+	padding:8px 40px;
+	font-weight:600;
+	color:$black;
+  	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);	
+	border:1px solid transparent;
+	border-radius:20px;
+	&:hover{
+		border:1px solid $white;
+		background:transparent;
+		color:$white;
+	}
+}
+
+
+//--------- End Banner Area -------------//
+
+
+//--------- Start service Area -------------//
+
+
+
+.single-service{
+	.icon{
+		margin-right:40px;
+	}
+
+	a{
+		color:$black;
+		&:hover{
+			@extend .p1-gradient-color;
+		}
+	}
+
+
+}
+
+
+//--------- End service Area -------------//
+
+
+//--------- start about Area -------------//
+
+.about-area{
+	background-color:$offwhite;
+}
+
+.about-left{
+
+}
+
+.myself-wrap{
+	background-color:$white;
+	display:inline-block;
+	
+	.desc{
+		padding: 35px;
+		text-align: center;  	 
+		p{
+			margin-bottom:5px;
+		}
+		.lnr{
+			font-size:20px;
+		}
+
+		.talk-btn{
+			@extend .p1-gradient-bg;
+			border:1px solid transparent;
+			color: #fff;
+			padding: 12px 70px;
+			display: inline-block;
+			border-radius: 25px;
+			font-weight:400;
+			&:hover{
+				background:transparent;
+				border:1px solid $black;
+				color:$black
+			}
+		}
+	}
+
+	@media(max-width:800px){
+		margin-top:30px;
+		display:block;
+		margin-left:auto !important;
+		margin-right:auto !important;
+	}
+}
+
+
+.skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    .skillwrap{
+		background-color: $white;
+		border-radius: 10px;
+		border: 1px solid #bababa;
+		padding: 2px; 	
+    }
+}
+
+
+.skillbar-bar {
+			 border-collapse: separate;
+		border-spacing:100px; 
+	border-radius:10px;
+    height: 10px;
+    width: 0px;
+    @extend .p1-gradient-bg;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    color: #323232;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+	color: #777777;
+	font-size: 14px;
+	margin-bottom:10px;
+	font-weight: 400;
+	text-align: right;
+}
+
+/* CENTERING ONLY */
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+
+//--------- end about area  -------------//
+
+
+//--------- start qualification area  -------------//
+
+.single-qly{
+	text-align:center;
+	padding:30px 0px;
+	b{
+		color:$black;
+		font-weight:600;
+	}
+	p{
+		margin-bottom:0px;
+	}
+}
+
+	.btm-border{
+		background: #ddd;
+		width: 70%;
+		height: 1px;
+	}
+
+
+
+
+//--------- end qualification area  -------------//
+
+
+//--------- start project area  -------------//
+
+
+.project-area{
+	background-color:$offwhite;
+}
+
+
+.single-project{
+	a{
+		color:$black;
+	}
+	img{
+		@include transition();
+		&:hover{
+			cursor: pointer;
+			transform: scale(.9);
+		}
+		@media(max-width:800px){
+			margin-left:auto !important;
+			margin-right:auto !important;
+			display:block;
+		}
+	}
+}
+
+//--------- end project area  -------------//
+
+//--------- start feature area  -------------//
+
+
+.single-feature{
+	background-color:$offwhite;
+	padding:30px 30px 15px 30px;
+	@include transition();
+	a{
+		color:$black;
+	}
+	&:hover{
+		cursor:pointer;
+		@extend .p1-gradient-bg;
+		color:$white;
+		a,.title .lnr{
+			color:$white;
+		}
+	}
+	.title{
+		.lnr{
+			color:$black;
+			font-weight: 400;
+			margin-right: 12px;
+			font-size: 20px;
+		}
+	}
+}
+
+
+//--------- end feature area  -------------//
+
+
+//--------- start contact  area -------------//
+
+
+.single-contact-info{
+	text-align:center;
+	h6{
+		text-transform:uppercase;
+	}
+	@media(max-width:800px){
+		margin-bottom:30px;
+	}
+}
+
+.form-area{
+	input{
+		padding: 15px;		
+	}
+	input,textarea{
+		border-radius:0;
+		font-size:12px;
+	}
+	textarea{
+		height: 180px;
+		margin-top: 0px;
+	}
+}
+
+
+//--------- end contact area  -------------//
+
+
+//--------- start footer Area -------------//
+
+	.footer-area{
+		padding-top:100px;
+		background-color:#222222;
+	}
+	h6{
+		color:#fff;
+		margin-bottom:25px;
+		font-size:18px;
+		font-weight:600;
+	}
+	
+	.copy-right-text{
+		i,a{
+			color:$primary-color;
+		}
+	}
+
+
+
+
+	.footer-social{
+		a{
+			padding-right:25px;
+			@include transition();
+			&:hover{
+			
+				i{
+						@extend .p1-gradient-color;
+				}
+			}
+		}
+		
+		i{
+			color:#cccccc;
+			@include transition();
+
+		}
+		@include media-breakpoint-down(md) {
+			text-align:left;
+		}
+	}
+
+
+	.single-footer-widget {
+		input {
+			border: none;
+			width:80%;
+			font-weight: 300;
+			background: #191919;
+			color:#777;
+			padding-left:20px;
+			border-radius: 0;
+			font-size: 14px;
+			&:focus {
+    			background-color: #191919;
+			}
+		}
+
+
+
+		.bb-btn{
+			@extend .p1-gradient-color;
+			color:#fff;
+			font-weight:300;
+			border-radius:0;
+			z-index:9999;
+			cursor:pointer;
+		}
+
+
+
+		.info {
+				position:absolute;
+				margin-top:20%;
+				color: #fff;
+				font-size: 12px;
+				&.valid {
+					color: green;
+				}
+				&.error {
+					color: red;
+				}
+
+		}
+
+		.click-btn{
+			@extend .p1-gradient-bg;
+			color: #fff;
+			border-radius: 0;
+			border-top-left-radius: 0px;
+			border-bottom-left-radius: 0px;
+			padding: 8px 12px;
+			border:0;
+		}
+
+		::-moz-selection { /* Code for Firefox */
+	  	 	 background-color: #191919!important;
+	  		 color: $text-color;
+		}
+		::selection {
+		    background-color: #191919!important;
+		    color: $text-color;
+		}
+		::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+		    color:    $text-color;
+		    font-weight: 300;
+		}
+		:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+		   color:    $text-color;
+		   opacity:  1;
+		   font-weight: 300;
+		}
+		::-moz-placeholder { /* Mozilla Firefox 19+ */
+		   color:    $text-color;
+		   opacity:  1;
+		   font-weight: 300;
+		}
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		   color:    $text-color;
+		   font-weight: 300;
+		}
+		::-ms-input-placeholder { /* Microsoft Edge */
+		   color:    $text-color;
+		   font-weight: 300;
+		}
+
+		@include media-breakpoint-down(md) {
+			margin-bottom:30px;
+		}
+	}
+		
+
+
+		@media(max-width:800px){
+			.social-widget{
+				margin-top:30px;
+			}			
+		}
+		
+
+	.footer-text{
+		padding-top:20px;
+		a,i{
+			color:$primary-color;
+		}
+	}
+
+//--------- end footer Area -------------//
+
+//----------- Start Generic Page -------------//
+
+.whole-wrap{
+	background-color:$white;
+}
+
+
+.generic-banner {
+	@extend .p1-gradient-bg;
+	text-align:center;
+	.height {
+		height: 600px;
+		@include media-breakpoint-down (sm) {
+			height: 400px;
+		}
+	}
+	.generic-banner-content {
+		h2 {
+			line-height: 1.2em;
+			margin-bottom: 20px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+		p {
+			text-align:center;
+			font-size: 16px;
+			br {
+				@include media-breakpoint-down (md) {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.generic-content{
+	h1{
+		font-weight:600;	
+	}
+}
+
+
+.about-generic-area {
+	background: $white;
+	.border-top-generic {
+		border-top: 1px dotted #eee;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+}
+.white-bg {
+	background: $white;
+}
+.section-top-border {
+	padding: 70px 0;
+	border-top: 1px dotted #eee;
+}
+.switch-wrap {
+	margin-bottom: 10px;
+	p {
+		margin: 0;
+	}
+}
+//----------- End Generic Page -------------//
+
+

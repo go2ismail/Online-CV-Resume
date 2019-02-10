@@ -1,0 +1,217 @@
+@media (max-width: 1199px){
+    .about_person_area .person_img {
+        max-width: none;
+        width: 100%;
+        display: block;
+    }
+    .about_person_area .person_details {
+        margin-left: 0px;
+    }
+    .social_icon li {
+        margin-right: 4px;
+    }
+    .education_area .education_inner_area .education_item {
+        max-width: 375px;
+    }
+    .education_area .education_inner_area .education_item::before {
+        right: -52px;
+        top: 0px;
+    }
+    .education_area .education_inner_area .education_item::after {
+        right: -29px;
+        width: 110%;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2n)::before {
+        right: auto;
+        left: -52px;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2n)::after {
+        left: -21px;
+    }
+    .blog_slider_area, .instagram_area {
+        min-height: 516px;
+    }
+    .footer_copyright .pull-right .navbar-nav li {
+        margin-right: 18px;
+    }
+}
+@media (max-width: 991px){
+    .header_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li {
+        margin-right: 18px;
+    }
+    .about_person_area .person_img {
+        text-align: center;
+    }
+    .about_person_area .person_details {
+        margin-top: 30px;
+    }
+    .myskill_area .col-md-6:last-child{
+        margin-top: 40px;
+    }
+    .education_area .education_inner_area .education_item {
+        margin-bottom: 236px;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2) {
+        margin-top: 238px;
+    }
+    .portfolio_area .portfolio_list_inner{
+        max-width: 342px;
+        margin: auto;
+    }
+    .news_area .news_inner_area{
+        max-width: 315px;
+        margin: auto;
+    }
+    .blog_slider_area {
+        margin: 20px 0px;
+    }
+    .blog_slider_area, .instagram_area {
+        min-height: 420px;
+    }
+    .contact_area .contact_from_area{ 
+        margin-top: 40px;
+    }
+    .footer_copyright .pull-left{
+        float: none !important;
+        text-align: center;
+    }
+    .footer_copyright .pull-right{
+        float: none !important;
+        text-align: center;
+    }
+    .footer_copyright .pull-right .navbar-nav{
+        float: none !important;
+        text-align: center;
+    }
+    .footer_copyright .pull-right .navbar-nav li {
+        float: none;
+        display: inline-block;
+    }
+    .footer_copyright .pull-right .navbar-nav li a {
+        line-height: 45px;
+    }
+    .footer_copyright .pull-left h5 {
+        line-height: 45px;
+    }
+}
+@media (max-width: 767px){
+    .navbar-toggle {
+        margin-top: 23px;
+        margin-bottom: 23px;
+        border: 1px solid #333333 !important;
+    }
+    .navbar-toggle:hover {
+        background: transparent !important;
+    }
+    .navbar-toggle span{
+        background: #333333 !important;
+    }
+    .header_area .navbar.navbar-default .navbar-header .navbar-brand {
+        line-height: 78px;
+    }
+    .header_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li a {
+        display: block;
+        line-height: 45px;
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    .header_area .navbar.navbar-default .navbar-collapse .nav.navbar-nav li:last-child a {
+        border: none;
+    }
+    .person_details .social_icon li {
+        margin-bottom: 8px;
+    }
+    .person_details .social_icon {
+        margin-bottom: -8px;
+    }
+    .education_area .education_inner_area .education_item::after {
+        right: -23px;
+        width: 122%;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2) {
+        margin-top: 275px;
+    }
+    .education_area .education_inner_area .education_item {
+        margin-bottom: 280px;
+    }
+    .education_area .education_inner_area .education_item {
+        width: 49%;
+        max-width: none; 
+    }
+}
+@media (max-width: 600px){
+    .pad{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2n+1) {
+        float: none;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2n) {
+        float: none;
+    }
+    .education_area .education_inner_area::before {
+        display: none;
+    }
+    .education_area .education_inner_area .education_item {
+        margin-bottom: 30px;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2) {
+        margin-top: 30px;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2n)::before {
+        right: -53px;
+        left: auto;
+    }
+    .education_area .education_inner_area {
+        overflow: visible;
+        max-width: 250px;
+        margin: auto;
+    }
+    .education_area .education_inner_area .education_item {
+        width: 100%;
+        max-width: none;
+    }
+    .education_area .education_inner_area .education_item::after {
+        width: 110%;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2n)::after {
+         left: auto; 
+    }
+    .education_area .education_inner_area .education_item::after {
+        display: none;
+    }
+    .education_area .education_inner_area .education_item:nth-child(2n)::before {
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .portfolio_area .porfolio_menu .causes_filter li {
+        margin-right: 18px;
+    }
+}
+@media (max-width: 500px){
+    .pad{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about_person_area .person_details .person_information ul + ul {
+        padding-left: 6px;
+    }
+    .main_container{
+        padding: 0px;
+    }
+}
+@media (max-width: 480px){
+    .education_area .education_inner_area .education_item::before {
+        right: auto;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer_inner .social_icon li{
+        margin-bottom: 6px;
+    }
+    .footer_copyright .pull-left h5 {
+        font-size: 12px;
+    }
+}

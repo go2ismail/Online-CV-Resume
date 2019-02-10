@@ -1,0 +1,95 @@
+/* Download BTN area css
+============================================================================================ */
+.download_btn{
+    display: block;
+    background: $baseColor;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20px;
+    color: $dip;
+    font-size: 18px;
+    font-family: $yell;
+    position: relative;
+    overflow: hidden;
+    span{
+        display: inline-block;
+        width: 100%;
+        backface-visibility: hidden;
+        height: 100%;
+        @include transition;
+    }
+    &:before{
+        content: "\f019";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        color: $dip;
+        top: -100%;
+        left: 0px;
+        font-family: FontAwesome;
+        transition: all 200ms ease-in;
+    }
+    &:hover{
+        span{
+            transform: translateY(300%);
+        }
+        &:before{
+            top: 0px;
+        }
+    }
+}
+
+.contact_btn{
+    max-width: 140px;
+    display: block;
+    line-height: 40px;
+    color: #fff;
+    font-family: $ral;
+    box-shadow: none !important;
+    outline: none !important;
+    border: none;
+    border-radius: 0px;
+    background: $baseColor;
+    width: 100%;
+    padding: 0px; 
+    position: relative;
+    overflow: hidden;
+    span{
+        display: inline-block;
+        width: 100%;
+        backface-visibility: hidden;
+        height: 100%;
+        @include transition;
+    }
+    &:before{
+        content: "\f1d8";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        font-size: 18px;
+        color: #fff;
+        top: -100%;
+        left: 0px;
+        font-family: FontAwesome;
+        transition: all 200ms ease-in;
+    }
+    &:focus{
+        background: $baseColor;
+    }
+    &:hover{
+        background: $baseColor;
+        span{
+            transform: translateY(300%);
+        }
+        &:before{
+            top: 0px;
+        }
+    }
+}
+/* End Download BTN area css
+============================================================================================ */
